@@ -17,7 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get ('/task',function(){
+    return view('task');
+});
 
-Route:: get('/about','pageController@indexAbout');
+Route::post('/saveTask','taskController@store');
+// Route:: get('/about','pageController@indexAbout');
 
-Route:: get ('contact','pageController@indexContactUs');
+// Route:: get ('/contact','pageController@indexContactUs');
